@@ -1,0 +1,8 @@
+package.json
+package-lock.json
+dist
+*.*js
+*.*rc
+*.*rc.js
+storybook-static
+coverage

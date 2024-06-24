@@ -1,0 +1,28 @@
+.container {
+  padding: calc(var(--scentronix-spacing) * 2) calc(var(--scentronix-spacing) * 3);
+  width: 100%;
+}
+
+.summary {
+  color: var(--scentronix-black);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--scentronix-spacing);
+  align-items: center;
+  text-align: left;
+}
+
+.description {
+  margin-top: var(--scentronix-spacing);
+  color: var(--scentronix-gray);
+  text-align: left;
+}
+
+.tag {
+  margin-top: calc(var(--scentronix-spacing) * 2);
+  border-radius: 4px;
+  padding: calc(var(--scentronix-spacing) / 2) calc(var(--scentronix-spacing));
+  background-color: var(--scentronix-mid-gray);
+  color: var(--scentronix-black);
+  width: fit-content;
+}

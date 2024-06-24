@@ -1,0 +1,91 @@
+{
+  "name": "scentronix-ui",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/scentronix-ui.umd.js",
+  "module": "./dist/scentronix-ui.js",
+  "types": "./dist/scentronix-ui.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/scentronix-ui.js",
+      "require": "./dist/scentronix-ui.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "author": {
+    "name": "Khanh Hoang",
+    "email": "hoangduykhanh21@gmail.com",
+    "url": "https://github.com/codertapsu"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "^20.14.0",
+    "npm": "^10.7.0"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "build": "npm run compile && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "format": "prettier -c .",
+    "format:fix": "prettier --write .",
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "vitest run && npm run build"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.5.0",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^20.14.8",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "glob": "^10.4.2",
+    "jsdom": "^24.1.0",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.6",
+    "storybook": "^8.1.10",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vitest": "^1.6.0"
+  }
+}

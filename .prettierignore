@@ -1,0 +1,9 @@
+dist
+.vscode
+coverage
+node_modules
+**/*.md
+**/*.MD
+.github
+.changeset
+storybook-static
